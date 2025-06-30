@@ -34,23 +34,21 @@ export default function Inicio() {
 
       {/* ASISTENTE IA */}
       <section className="px-4 py-10 bg-black font-bold">
-        <div className="max-w-screen-2xl mx-auto grid lg:grid-cols-2 gap-10">
-          <div className="group rounded-xl overflow-hidden flex">
-            <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
-              <img
-                className="group-hover:scale-105 transition-transform duration-500 absolute top-0 left-0 object-cover rounded-xl w-full h-full"
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
-                alt="Pickaxe IA"
-              />
-            </div>
-            <div className="grow mt-4 flex flex-col justify-center sm:mt-0 sm:ms-6 px-4 sm:px-0">
-              <h3 className="text-xl font-semibold text-white">
-                ¿Tienes dudas? Pregúntale a nuestro Asistente IA
-              </h3>
-              <p className="mt-3 text-gray-400">
-                Usa nuestro chat de inteligencia artificial para obtener respuestas al instante sobre nuestros servicios, precios y disponibilidad. Haz clic en el ícono de chat para empezar.
-              </p>
-            </div>
+        <div className="max-w-screen-2xl mx-auto flex flex-col-reverse lg:flex-row gap-12 items-center">
+          <div className="lg:w-1/2 flex justify-center">
+            <img
+              className="shadow-xl max-h-[400px] rounded-xl"
+              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+              alt="Asistente IA"
+            />
+          </div>
+          <div className="lg:w-1/2">
+            <h2 className="text-2xl text-white font-bold sm:text-3xl">
+              ¿Tienes dudas? Pregúntale a nuestro Asistente IA
+            </h2>
+            <p className="text-gray-400 mt-4">
+              Usa nuestro chat de inteligencia artificial para obtener respuestas al instante sobre nuestros servicios, precios y disponibilidad. Haz clic en el ícono de chat en la esquina inferior derecha para empezar.
+            </p>
           </div>
         </div>
       </section>
