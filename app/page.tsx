@@ -32,27 +32,6 @@ export default function Inicio() {
         </div>
       </section>
 
-      {/* ASISTENTE IA */}
-      <section className="px-4 py-10 bg-black font-bold">
-        <div className="max-w-screen-2xl mx-auto flex flex-col-reverse lg:flex-row gap-12 items-center">
-          <div className="lg:w-1/2 flex justify-center">
-            <img
-              className="shadow-xl max-h-[400px] rounded-xl"
-              src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
-              alt="Asistente IA"
-            />
-          </div>
-          <div className="lg:w-1/2">
-            <h2 className="text-2xl text-white font-bold sm:text-3xl">
-              ¿Tienes dudas? Pregúntale a nuestro Asistente IA
-            </h2>
-            <p className="text-gray-400 mt-4">
-              Usa nuestro chat de inteligencia artificial para obtener respuestas al instante sobre nuestros servicios, precios y disponibilidad. Haz clic en el ícono de chat en la esquina inferior derecha para empezar.
-            </p>
-          </div>
-        </div>
-      </section>
-
 {/* BLOQUE ¿Por qué un precio más bajo? */}
       <section className="px-4 py-10 bg-black font-bold">
         <div className="max-w-screen-2xl mx-auto flex flex-col lg:flex-row gap-12">
