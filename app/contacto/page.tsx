@@ -1,6 +1,51 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 
 export default function Contacto() {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    email: '',
+    mensaje: '',
+  });
+  const [status, setStatus] = useState({
+    loading: false,
+    success: false,
+    error: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setStatus({ loading: true, success: false, error: '' });
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Algo salió mal al enviar el mensaje.');
+      }
+
+      setStatus({ loading: false, success: true, error: '' });
+      setFormData({ nombre: '', email: '', mensaje: '' }); // Limpiar formulario
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'Error desconocido';
+      setStatus({ loading: false, success: false, error: errorMessage });
+    }
+  };
+
   return (
     <div className="bg-black text-white font-energetic">
       <div className="mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
@@ -11,18 +56,49 @@ export default function Contacto() {
             </div>
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="relative mb-6">
-                    <input type="text" className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary motion-reduce:transition-none text-white placeholder:text-gray-400" id="exampleInput90" placeholder="Nombre"/>
+                    <input 
+                      type="text" 
+                      name="nombre"
+                      value={formData.nombre}
+                      onChange={handleChange}
+                      required
+                      className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary motion-reduce:transition-none text-white placeholder:text-gray-400" 
+                      id="exampleInput90" 
+                      placeholder="Nombre"
+                    />
                   </div>
                   <div className="relative mb-6">
-                    <input type="email" className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary motion-reduce:transition-none text-white placeholder:text-gray-400" id="exampleInput91" placeholder="Email"/>
+                    <input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary motion-reduce:transition-none text-white placeholder:text-gray-400" 
+                      id="exampleInput91" 
+                      placeholder="Email"
+                    />
                   </div>
                   <div className="relative mb-6">
-                    <textarea className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none text-white placeholder:text-gray-400" id="exampleFormControlTextarea1" rows={3} placeholder="Mensaje"></textarea>
+                    <textarea 
+                      name="mensaje"
+                      value={formData.mensaje}
+                      onChange={handleChange}
+                      required
+                      className="peer block min-h-[auto] w-full rounded border-0 bg-gray-800 px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none text-white placeholder:text-gray-400" 
+                      id="exampleFormControlTextarea1" 
+                      rows={3} 
+                      placeholder="Mensaje"
+                    ></textarea>
                   </div>
-                  <button type="button" className="mb-6 inline-block w-full rounded bg-orange-500 px-6 py-3 font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:bg-orange-600 focus:outline-none focus:ring-0 active:bg-orange-700">
-                    Enviar
+                  
+                  {status.success && <p className="text-green-500 mb-4 text-center">¡Mensaje enviado con éxito!</p>}
+                  {status.error && <p className="text-red-500 mb-4 text-center">Error: {status.error}</p>}
+
+                  <button type="submit" disabled={status.loading} className="mb-6 inline-block w-full rounded bg-orange-500 px-6 py-3 font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-orange-600 focus:bg-orange-600 focus:outline-none focus:ring-0 active:bg-orange-700 disabled:bg-gray-500 disabled:cursor-not-allowed">
+                    {status.loading ? 'Enviando...' : 'Enviar'}
                   </button>
                 </form>
               </div>

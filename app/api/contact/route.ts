@@ -22,12 +22,12 @@ export async function POST(req: Request) {
       subject: `Nuevo Mensaje de Contacto de ${nombre}`,
       html: `
         <h1>Nuevo mensaje desde la web Aero4</h1>
-        <p><strong>Nombre:</strong> </p>
-        <p><strong>Email:</strong> </p>
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Email:</strong> ${email}</p>
         <hr />
         <p><strong>Mensaje:</strong></p>
-        <p></p>
-      `,
+        <p>${mensaje}</p>
+      `
     });
 
     // Si hay un error en el envío, devuélvelo
