@@ -37,7 +37,9 @@ export default function Contacto() {
                       </div>
                       <div className="ml-6 grow">
                         <p className="mb-2 font-bold">Email</p>
-                        <p className="text-gray-400">filmacionaerea@aero4.net</p>
+                        <a href="mailto:filmacionaerea@aero4.net" className="text-gray-400 hover:text-orange-500 transition-colors underline">
+                          filmacionaerea@aero4.net
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -50,7 +52,9 @@ export default function Contacto() {
                       </div>
                       <div className="ml-6 grow">
                         <p className="mb-2 font-bold">Teléfono</p>
-                        <p className="text-gray-400">+34 643 33 17 11</p>
+                        <a href="tel:+34643331711" className="text-gray-400 hover:text-orange-500 transition-colors underline">
+                          +34 643 33 17 11
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -63,7 +67,9 @@ export default function Contacto() {
                       </div>
                       <div className="ml-6 grow">
                         <p className="mb-2 font-bold">Instagram</p>
-                        <p className="text-gray-400">@aero4filmacionaerea</p>
+                        <a href="https://instagram.com/aero4filmacionaerea" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors underline">
+                          @aero4filmacionaerea
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -76,7 +82,9 @@ export default function Contacto() {
                       </div>
                       <div className="ml-6 grow">
                         <p className="mb-2 font-bold">Whatsapp</p>
-                        <p className="text-gray-400">+34 643 33 17 11</p>
+                        <a href="https://wa.me/34643331711" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors underline">
+                          +34 643 33 17 11
+                        </a>
                       </div>
                     </div>
                   </div>

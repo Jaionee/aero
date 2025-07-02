@@ -58,7 +58,7 @@ export default function ComoTrabajo() {
                 {/* Tab Content */}
                 <div>
                   <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/pexels-photo-3861969.jpeg" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/oWdQooxyQkm92CRj.webp" alt="Image Description"/>
                   </div>
                   <div id="tabs-with-card-2" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
                     <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/pexels-photo-32479534.jpeg" alt="Image Description"/>
