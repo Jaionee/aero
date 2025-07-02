@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ComoTrabajo() {
   return (
-    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto font-energetic bg-black text-white">
+    <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto font-energetic bg-black min-h-screen text-white">
       <div className="max-w-screen-2xl mx-auto">
         <div className="relative p-6 md:p-16">
           <div className="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">

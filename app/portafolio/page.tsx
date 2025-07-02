@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Portafolio() {
   return (
-    <div className="bg-black text-white font-energetic">
+    <div className="bg-black text-white font-energetic min-h-screen">
       <div className="max-w-screen-2xl mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
           <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">Portafolio</h2>
