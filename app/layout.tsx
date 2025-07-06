@@ -54,9 +54,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: '/NZWOe56msmky6Wmx.png',
-    shortcut: '/NZWOe56msmky6Wmx.png',
-    apple: '/NZWOe56msmky6Wmx.png',
+    icon: '/image/NZWOe56msmky6Wmx.png',
+    shortcut: '/image/NZWOe56msmky6Wmx.png',
+    apple: '/image/NZWOe56msmky6Wmx.png',
   },
 };
 

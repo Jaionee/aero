@@ -6,7 +6,7 @@ export default function SobreMi() {
       <div className="max-w-screen-2xl mx-auto px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
         <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
           <div>
-            <img className="rounded-xl" src="/LWRAd6C6jvNPiFRb.jpeg" alt="Image Description"/>
+            <img className="rounded-xl" src="/image/LWRAd6C6jvNPiFRb.jpeg" alt="Image Description"/>
           </div>
           <div className="mt-5 sm:mt-10 lg:mt-0">
             <div className="space-y-6 sm:space-y-8">

@@ -58,19 +58,19 @@ export default function ComoTrabajo() {
                 {/* Tab Content */}
                 <div>
                   <div id="tabs-with-card-1" role="tabpanel" aria-labelledby="tabs-with-card-item-1">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/oWdQooxyQkm92CRj.webp" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/image/oWdQooxyQkm92CRj.webp" alt="Image Description"/>
                   </div>
                   <div id="tabs-with-card-2" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-2">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/pexels-photo-32479534.jpeg" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/image/pexels-photo-32479534.jpeg" alt="Image Description"/>
                   </div>
                   <div id="tabs-with-card-3" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-3">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/file.svg" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/image/file.svg" alt="Image Description"/>
                   </div>
                    <div id="tabs-with-card-4" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-4">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/vite.svg" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/image/vite.svg" alt="Image Description"/>
                   </div>
                    <div id="tabs-with-card-5" className="hidden" role="tabpanel" aria-labelledby="tabs-with-card-item-5">
-                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/window.svg" alt="Image Description"/>
+                    <img className="shadow-xl shadow-gray-800 max-h-[550px] rounded-xl" src="/image/window.svg" alt="Image Description"/>
                   </div>
                 </div>
                 {/* End Tab Content */}

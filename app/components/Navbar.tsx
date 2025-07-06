@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav className="relative max-w-screen-2xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex text-xl gap-2 items-center font-semibold text-white" aria-label="Aero4">
-            <img src="/NZWOe56msmky6Wmx.png" alt="Logo" className="w-[40px] rounded-lg" />
+            <img src="/image/NZWOe56msmky6Wmx.png" alt="Logo" className="w-[40px] rounded-lg" />
             <span className="text-[20px] leading-none">Aero4</span>
           </Link>
           <div className="sm:hidden">

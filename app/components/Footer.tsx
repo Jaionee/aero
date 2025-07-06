@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-screen-2xl mx-auto flex flex-col md:flex-row gap-12 pt-10">
         <div>
           <Link href="/" className="text-white flex items-center gap-2 text-xl font-bold md:text-2xl">
-            <img src="/NZWOe56msmky6Wmx.png" alt="Logo" className="w-[40px] rounded-lg" />
+            <img src="/image/NZWOe56msmky6Wmx.png" alt="Logo" className="w-[40px] rounded-lg" />
             <span>Aero4</span>
           </Link>
           <p className="text-gray-400 max-w-[500px] mb-6">
