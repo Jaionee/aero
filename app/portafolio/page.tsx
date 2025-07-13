@@ -13,7 +13,7 @@ export default function Portafolio() {
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
               <video
                 className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-                src="/videos/LAO.mp4"
+                src="/videos/Video de WhatsApp 2025-07-09 a las 18.08.37_d1a0be6d.mp4"
                 autoPlay
                 loop
                 muted
@@ -29,7 +29,16 @@ export default function Portafolio() {
           </a>
           <a className="group block" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-              <img className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/image/MGFdQesCmtQHJ39j.jpeg" alt="Image Description"/>
+              <video
+                className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                src="/videos/Video de WhatsApp 2025-07-10 a las 14.18.32_27036cd0.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                Tu navegador no soporta el tag de video.
+              </video>
             </div>
             <div className="mt-7">
               <h3 className="text-xl font-semibold text-white">Video corporativo</h3>
