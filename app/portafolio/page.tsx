@@ -54,6 +54,61 @@ export default function Portafolio() {
               <p className="mt-3 text-gray-400">Grabación y edición de video para boda en la playa.</p>
             </div>
           </a>
+          <a className="group block" href="#">
+            <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+              <video
+                className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                src="/videos/1.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                Tu navegador no soporta el tag de video.
+              </video>
+            </div>
+
+            <div className="mt-7">
+              <h3 className="text-xl font-semibold text-white">Magia Pirotécnica</h3>
+              <p className="mt-3 text-gray-400">La belleza efímera de los fuegos artificiales en su máximo esplendor.</p>
+            </div>
+          </a>
+          <a className="group block" href="#">
+            <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+              <video
+                className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                src="/videos/2.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                Tu navegador no soporta el tag de video.
+              </video>
+            </div>
+            <div className="mt-7">
+              <h3 className="text-xl font-semibold text-white">Noche de Luces</h3>
+              <p className="mt-3 text-gray-400">Capturando la magia de la iluminacion en un evento espectacular.</p>
+            </div>
+          </a>
+          <a className="group block" href="#">
+            <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
+              <video
+                className="size-full absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
+                src="/videos/3.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                Tu navegador no soporta el tag de video.
+              </video>
+            </div>
+            <div className="mt-7">
+              <h3 className="text-xl font-semibold text-white">Vistas panoramicas</h3>
+              <p className="mt-3 text-gray-400">Disfruta del paisaje y las vistas panoramicas desde diferentes ángulos.</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
