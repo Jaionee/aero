@@ -89,7 +89,7 @@ export default function Portafolio() {
             <div className="mt-7">
               <h3 className="text-xl font-semibold text-white">Noche de Luces</h3>
               <p className="mt-3 text-gray-400">Capturando la magia de la iluminacion en un evento espectacular.</p>
-            </div>
+  w          </div>
           </a>
           <a className="group block" href="#">
             <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
